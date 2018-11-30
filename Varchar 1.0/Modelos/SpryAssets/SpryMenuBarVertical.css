@@ -113,7 +113,7 @@ ul.MenuBarVertical a.MenuBarItemSubmenu
 	background-image: url(SpryMenuBarRight.gif);
 	background-repeat: no-repeat;
 	background-position: 95% 50%;
-	width: auto;
+	width: 15em;
 }
 
 /* Menu items that are open with submenus have the class designation MenuBarItemSubmenuHover and are set to use a "hover" background image positioned on the far left (95%) and centered vertically (50%) */
