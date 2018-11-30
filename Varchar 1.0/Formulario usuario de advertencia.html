@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Formulario de usuario con advertencia</title>
+<style type="text/css">
+#apDiv1 {	position: absolute;
+	width: 517px;
+	height: 285px;
+	z-index: 1;
+	left: 378px;
+	top: 178px;
+}
+#apDiv2 {
+	position: absolute;
+	width: 576px;
+	height: 121px;
+	z-index: 2;
+	left: 416px;
+	top: 22px;
+	background-color: #000000;
+}
+body {
+	background-image: url(fondo-de-madera2.jpg);
+}
+#apDiv3 {
+	position: absolute;
+	width: 254px;
+	height: 52px;
+	z-index: 3;
+	left: 493px;
+	top: 518px;
+	background-color: #000000;
+}
+#apDiv4 {
+	position: absolute;
+	width: 260px;
+	height: 168px;
+	z-index: 3;
+	left: 28px;
+	top: 239px;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('imagenes/fondo-ubuntu-tru15sty-1-690x431.png')">
+<div id="apDiv1">
+  <form action="guardar.php" method="post" action="">
+  <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Nombre:</font>
+    <input type="text" name="Nombre" id="Nombre"  placeholder="Nombre y Apellido" required="required" />
+  </p>
+  <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Contraseña:</font>
+    <input type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña " required="required" />
+  </p>
+  <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Email:</font>
+    <input type="email" name="Email" id="Email"  placeholder="Correo Electronico" required="required" />
+  </p>
+  <p>
+    <label for="Edad"><font color="#FFFFFF" size="+1" face="Lucida Console, Monaco, monospace">Edad:</font></label>
+    <input name="Edad" type="number"  id="Edad" value="0" maxlength="100" required="required" />
+  </p>
+  <p>
+    <label for="sexo"><font color="#FFFFFF" size="+1" face="Lucida Console, Monaco, monospace">Sexo:</font></label>
+    <select name="select">
+      <option>Masculino</option>
+      <option>Femenino</option>
+      <option>Prefiero no decirlo</option>
+    </select>
+  </p>
+  <input type="submit" value="Enviar Formulario" />
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  </form>
+</div>
+<a href="Varchar1.0.html"><img src="Sin título.png" width="344" height="164" alt="Inicio" longdesc="Untitled-2.html" /></a>
+<div id="apDiv2">
+  <div align="center"><font color="#FF0000" size="+3" face="Lucida Console, Monaco, monospace">Debe registrarse o iniciar sesion para poder ver el contenido </font></div>
+</div>
+<div id="apDiv4"><a href="Formulario usuario.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Ya tengo una cuenta','','imagenes/fondo-ubuntu-tru15sty-1-690x431.png',1)"><img src="imagenes/fondo-ubuntu-trusty-1-690x431.png" width="267" height="167" id="Ya tengo una cuenta" /></a></div>
+</body>
+</html>
