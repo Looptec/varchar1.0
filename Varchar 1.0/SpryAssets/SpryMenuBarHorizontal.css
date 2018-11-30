@@ -123,7 +123,6 @@ ul.MenuBarHorizontal a.MenuBarItemSubmenu
 	background-image: url(SpryMenuBarDown.gif);
 	background-repeat: no-repeat;
 	background-position: 95% 50%;
-	text-align: justify;
 }
 /* Menu items that have a submenu have the class designation MenuBarItemSubmenu and are set to use a background image positioned on the far left (95%) and centered vertically (50%) */
 ul.MenuBarHorizontal ul a.MenuBarItemSubmenu

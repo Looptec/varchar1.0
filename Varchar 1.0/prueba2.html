@@ -1,0 +1,17 @@
+<?php 
+	$conexion = mysql_connect("localhost","root","mysql");
+   	mysql_select_db("cliente",$conexion);
+	$nom=$_POST['nombre_cli'];
+	$ced=$_POST['cedula'];
+	$sexo=$_POST['sexo'];
+	$dir=$_POST['direccion'];
+	$tele=$_POST['telefono'];
+	$mail=$_POST['e_mail'];
+	$sql = "INSERT INTO client (nombre_cli,cedula,sexo,direccion,telefono,e_mail) VALUES ('$nom','$ced','$sexo','$dir','$tele','$mail');";
+	$num = mysql_query($sql, $conexion) or die(mysql_error());
+	
+	if($num>0)
+		echo "<strong>Datos Guardados</strong><br><br>";
+	
+	mysql_close($conexion);
+?>
