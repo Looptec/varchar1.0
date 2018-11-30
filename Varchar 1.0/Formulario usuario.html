@@ -10,10 +10,11 @@ body {
 #apDiv1 {
 	position: absolute;
 	width: 517px;
-	height: 285px;
+	height: 403px;
 	z-index: 1;
 	left: 378px;
 	top: 178px;
+	background-color: #000000;
 }
 #apDiv2 {
 	position: absolute;
@@ -22,6 +23,14 @@ body {
 	z-index: 2;
 	left: 8px;
 	top: 5px;
+}
+#apDiv3 {
+	position: absolute;
+	width: 1109px;
+	height: 870px;
+	z-index: 3;
+	left: 72px;
+	top: 251px;
 }
 </style>
 </head>
@@ -33,21 +42,23 @@ body {
  
     <form action="guardar.php" method="post" action="">
   
-    <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Nombre:</font>
+    <p align="center"><font color="#FFFFFF" size="+3" face="Lucida Console, Monaco, monospace">Registrate</font></p>
+    <p align="center">&nbsp;</p>
+    <p align="center"><font color="#FFFFFF" size="+1" face="Lucida Console, Monaco, monospace">Nombre:</font>
       <input type="text" name="Nombre" id="Nombre"  placeholder="Nombre y Apellido" required="required" />
     </p>
-    <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Contraseña:</font>
+    <p align="center"><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Contraseña:</font>
       <input type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña " required="required" />
     </p>
-    <p><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Email:</font>
+    <p align="center"><font color="#ffffff" size="+1" face="Lucida Console, Monaco, monospace">Email:</font>
       <input type="email" name="Email" id="Email"  placeholder="Correo Electronico" required="required" />
     </p>
-    <p>
+    <p align="center">
         <label for="Edad"><font color="#FFFFFF" size="+1" face="Lucida Console, Monaco, monospace">Edad:</font></label>
       <input name="Edad" type="number"  id="Edad" value="0" maxlength="100" required="required" />
         
     </p>
-    <p>      
+    <p align="center">      
       <label for="sexo"><font color="#FFFFFF" size="+1" face="Lucida Console, Monaco, monospace">Sexo:</font></label>
       <select> 
         <option>Masculino</option>
@@ -56,12 +67,15 @@ body {
       </select>
       
     </p>
-    <input type="submit" value="Enviar Formulario">
+    <div align="center">
+      <input type="submit" value="Enviar Formulario">
+    </div>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
   </form>
 </div>
 <div id="apDiv2"><a href="Varchar1.0.html"><img src="Sin título.png" width="344" height="164" alt="Inicio" longdesc="Untitled-2.html" /></a></div>
 <p>&nbsp;</p>
+<div id="apDiv3"></div>
 </body>
 </html>
